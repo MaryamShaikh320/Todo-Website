@@ -1,18 +1,62 @@
 body {
-    background-color:black;
+    background-color:#EAF4F4;
 }
 
 .todo-box {
-    background-color:cornflowerblue;
-    padding: 25px;
+    background-color:#CCE3DE;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.272);
     width: fit-content;
     max-width: 400px; /* Limit width for better readability */
     text-align: center;
 }
 
 h1 {
-    color:#2b3136;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    color:#577669;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#todo-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+#new-task {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #A4C3B2;
+    font-size:1.1em;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#new-task::placeholder {
+    color: #999;
+}
+
+#new-task:focus {
+    border-color: #6B9080;
+}
+
+#todo-form button {
+    padding: 8px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#todo-form button:hover {
+    background-color:rgba(204, 204, 204, 0.954);
+}
+
+#todo-form button:active {
+    transform: scale(0.85);
 }
